@@ -1,0 +1,216 @@
+%\title{My two column CV}
+%
+% tccv (two columns curriculum vitae) is a LaTeX class inspired by
+% the template found at latextemplates.com by Alessandro Plasmati.
+%
+% Create by Nicola Fontana, the original files can be downloaded from:
+% http://dev.entidi.com/p/tccv/
+%
+\documentclass[twocolumn,11pt]{report}
+\usepackage[a4paper,margin=1in,landscape]{geometry}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    urlcolor = blue
+}
+
+\usepackage[T2A]{fontenc}
+
+%Hyphenation rules
+%--------------------------------------
+\usepackage{hyphenat}
+\hyphenation{ма-те-ма-ти-ка вос-ста-нав-ли-вать}
+%--------------------------------------
+\usepackage[english, russian]{babel}
+
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{0.6\baselineskip}{0.2\baselineskip}
+
+\begin{document}
+
+\section*{\huge Danila Danko}
+
+Разработчик
+
+\section*{Контакты}
+\begin{itemize}
+     \itemsep0em
+     \item GitHub: \href{https://github.com/deemp}{deemp}
+     \item Telegram: \href{https://t.me/daniladanko}{@daniladanko}
+     \item Email: br4ch1st0chr0n3@gmail.com
+\end{itemize}
+
+\section*{О себе}
+
+Предпочитаю программировать на функциональных языках.
+В основном занимался бэкендом и инфраструктурой.
+Имею опыт написания интерпретатора, бэкенда, встроенного предметно-ориентированного языка, скриптов и библиотек на Haskell.
+Реализовывал фронтенды на PureScript и TypeScript.
+Использовал много Nix и Bash в проектах.
+Работал с Docker, Kubernetes, Pulumi, Helm.
+Пользовался PostgreSQL, изучал SQL.
+Раньше писал на C++, Python, Prolog, Wolfram.
+Хочу работать в команде профессиональных Haskell-разработчиков над большими продуктами.
+Благодаря участию в открытых проектах умею распознавать проблемы пользователей и находить решения.
+
+\section*{Education}
+
+\textbf{Innopolis University} - Computer Science \newline
+2019-2023
+
+\section*{Work experience}
+
+\textbf{Innopolis University, Center GIS} - developer in the Polystat project \newline
+2021-2022
+
+\newpage
+
+\section*{Interests}
+\begin{itemize}
+     \itemsep0em
+     \item Функциональное программирование
+     \item Разработка открытого ПО
+     \item DevOps
+\end{itemize}
+
+\section*{Projects}
+\begin{itemize}
+     \item \href{https://github.com/breaking-news-org/back-end#readme}{breaking-news-org/back-end} - бэкенд новостного сайта (Haskell, Pulumi, Kubernetes, Nix, PostgreSQL)
+     \item \href{https://github.com/objectionary/try-phi#readme}{try-phi} - онлайн-интерпретатор EO и $\varphi$-исчисления (Haskell, TypeScript, PureScript)
+     \item \href{https://github.com/deemp/servant-queryparam#readme}{servant-queryparam} - плагин для servant (библиотеки для API на Haskell)
+     \item \href{https://github.com/deemp/clerk#readme}{clerk} - декларативная генерация таблиц (Haskell)
+     \item \href{https://github.com/deemp/projects/tree/main/haskell/ts-serializable-test#readme}{ts-serializable-test} - кодогенератор для тестирования библиотеки ts-serializable (Haskell, TypeScript)
+     \item \href{https://github.com/nix-community/nix-vscode-extensions#readme}{nix-vscode-extensions} - Nix-выражения для большинства расширений VS Code (Haskell, Nix)
+     \item \href{https://github.com/deemp/arigame#readme}{arigame} - арифметическая игра (PureScript)
+     \item \href{https://github.com/nix-community/cache-nix-action#readme}{cache-nix-action} - GitHub Action для кэширование Nix store (TypeScript)
+     \item \href{https://github.com/deemp/flakes#readme}{flakes} - Nix flakes для моих проектов
+     \item \href{https://github.com/deemp/projects#readme}{projects} - монорепозиторий с проектами на Haskell и других языках
+\end{itemize}
+
+% \part{Patrick O'Hara}
+
+% \section{Work experience}
+
+% \begin{eventlist}
+
+% \item{June 2009 -- Present}
+%      {Tim Hortons}
+%      {Server}
+
+% Servicing Canada's largest fast service restaurant chain whose sales records in baked goods and coffee have had remarkable impact on the Canadian food service industry. Attention had been paid to the provision of quality and timely service of thousands of daily customers.  
+
+% \item{June 2013 -- December 2013}
+%      {Phoenix Firestopping}
+%      {Firestopper}
+
+% Restoring fire-resistance of walls and floors in new housing structures by impeding the spread of hazardous flames with flame resistant materials.
+
+% \item{May 2012 -- November 2012}
+%      {Cornerstone Contractors}
+%      {Landscaper}
+
+% Modification of the visible features of an area of land in many forms namely gardening and planting, construction of patios and decks, and installation of drainage systems.
+
+% \end{eventlist}
+
+% \section{Education}
+
+% \begin{yearlist}
+
+% \item[Bachelor of Science]{2011 -- 2015}
+%      {Biology}
+%      {Dalhousie University, Halifax NS}
+
+% \item{2010 -- 2011}
+%      {Secondary School Diploma}
+%      {White Oaks Secondary School, Oakville ON}
+
+% \item{2008 -- 2010}
+%      {Secondary School}
+%      {American School of Dubai, Dubai UAE}
+
+% \item{2007 -- 2008}
+%      {Secondary School}
+%      {American School of Paris, Saint-Cloud FR}
+
+% \end{yearlist}
+% \personal
+%     [https://www.facebook.com/patrick.
+%     ohara.718]
+%     {312 Poplar Drive, Oakville, ON}
+%     {(902) 441 5181}
+%     {ohara.ptf@gmail.com}
+
+% \section{Extra Curricular Activities}
+
+% \begin{yearlist}
+
+% \item{2015}
+%      {Journey Canadian Tour}
+%      {Shadow Security Services}
+
+% \item{2015}
+%      {Bonnie Raitt}
+%      {Shadow Security Services}
+
+% \item{2014}
+%      {Freak Show Haunted Wharf}
+%      {Murphy's The Cable Wharf}
+
+% \item{2010}
+%      {Big Brother Program}
+%      {American School of Dubai}
+
+% \item{2010}
+%      {Beach Blast for children with disability}
+%      {American School of Dubai}
+
+% \end{yearlist}
+
+% \section{Communication skills}
+
+% \begin{factlist}
+% \item{English}{Native speaker}
+% \item{French}{Oral: intermediate; written: poor}
+% \end{factlist}
+
+% \section{Achievements}
+
+% \begin{yearlist}
+
+% \item{2015}
+%      {Bachelors Degree}
+%      {}
+
+% \item{2011}
+%      {Honor Roll}
+%      {}
+
+% \item{2010}
+%      {Eastern Mediterranean Volleyball Champions}
+%      {}
+
+% \item{2010}
+%      {Honor Roll}
+%      {}
+
+% \item{2010}
+%      {District Coastal Conference Volleyball Champions}
+%      {}
+
+% \end{yearlist}
+
+% \vspace{-6pt} % Otherwise it just falls onto the next page.
+% \section{Computer skills}
+
+% \begin{factlist}
+
+% \item{Good level}
+%      {Microsoft Office, email, social networking}
+
+% \item{Basic level}
+%      {GitHub, HTML}
+
+% \end{factlist}
+
+\end{document}
