@@ -8,11 +8,21 @@
 %
 \documentclass[twocolumn,11pt]{report}
 \usepackage[a4paper,margin=1in,landscape]{geometry}
+\usepackage{xcolor, soul}
 \usepackage{hyperref}
 \hypersetup{
-    colorlinks = true,
-    urlcolor = blue
+     colorlinks = true,
+     urlcolor = blue,
+     urlbordercolor=blue,% hyperlink borders will be red
 }
+
+\makeatletter
+\Hy@AtBeginDocument{%
+  \def\@pdfborder{0 0 1}% Overrides border definition set with colorlinks=true
+  \def\@pdfborderstyle{/S/U/W 1}% Overrides border style set with colorlinks=true
+                                % Hyperlink border style will be underline of width 1pt
+}
+\makeatother
 
 \begin{document}
 
@@ -28,175 +38,53 @@ Software developer
 \end{itemize}
 
 \section*{Summary}
-Functional programmer mainly working with infrastructure and back-end.
-Able to develop interpreters, back-ends, domain-specific languages, scripts and libraries in Haskell.
-Implemented front-ends in PureScript and TypeScript.
+Functional programmer.
+Implemented back ends in Haskell and Python, front ends in PureScript and TypeScript.
 Used Nix and Bash extensively for setting up projects infrastructure.
 Have experience with Docker, Kubernetes, Pulumi, Helm.
-Worked with PostgreSQL and studied SQL.
-Used to write in C++, Python, Prolog, Wolfram language.
-Willing to deepen my software engineering knowledge and work on big products in a team of professional Haskell developers.
+Worked with PostgreSQL, SQLite, and studied SQL.
+Managed the development of an open-source project.
+Willing to work on interesting products in a team of professional developers.
 
 % TODO value for company
 
 \section*{Education}
+\begin{itemize}
+     \item \textbf{Innopolis University} (2019-2023) \newline Computer Science
 
-\textbf{Innopolis University} - Computer Science \newline
-2019-2023
+     \item \textbf{Innopolis University} (2023-2025) \newline MS in Software Enginering
+
+\end{itemize}
 
 \section*{Work experience}
 
-\textbf{Innopolis University, Center GIS} - developer in the Polystat project \newline
-2021-2022
+\begin{itemize}
+     \item \textbf{Innopolis University} (2021-2022) \newline developer in the Polystat project
 
+\end{itemize}
 \newpage
 
 \section*{Interests}
 \begin{itemize}
-     \item Functional programming
-     \item Domain-specific languages
-     \item Improving developer experience
-     \item Contributing to open-source
+     \item Back-end development
      \item DevOps
+     \item Contributing to open-source
+     \item Functional programming
 \end{itemize}
 
 \section*{Projects}
+
 \begin{itemize}
-     \item \href{https://github.com/deemp/flakes#readme}{flakes} - Nix flakes for my projects
-     \item \href{https://github.com/objectionary/try-phi#readme}{try-phi} - online interactive interpreter of EO and $\varphi$-calculus (Haskell, TypeScript, PureScript)
-     \item \href{https://github.com/breaking-news-org/back-end#readme}{breaking-news-org/back-end} - news site back-end (Haskell, Pulumi, Kubernetes, Nix, PostgreSQL)
-     \item \href{https://github.com/deemp/servant-queryparam#readme}{servant-queryparam} - plugins for servant (Haskell API library)
-     \item \href{https://github.com/deemp/clerk#readme}{clerk} - declaratively generate spreadsheets (Haskell)
-     \item \href{https://github.com/deemp/projects/tree/main/haskell/ts-serializable-test#readme}{ts-serializable-test} - code generator for testing the ts-serializable library (Haskell, TypeScript)
+     \item \href{https://gitlab.pg.innopolis.university/elibrary/elibrary#electronic-library-of-iu}{elibrary} - electronic library of the Innopolis University (Python, TypeScript, Nix, Docker)
      \item \href{https://github.com/nix-community/nix-vscode-extensions#readme}{nix-vscode-extensions} - Nix expressions for almost all VSCode extensions (Haskell, Nix)
-     \item \href{https://github.com/deemp/arigame#readme}{arigame} - an arithmetics game (PureScript)
+     \item \href{https://github.com/deemp/flakes#readme}{flakes} - Nix flakes for my projects
      \item \href{https://github.com/deemp/projects#readme}{projects} - monorepo with my projects in Haskell and other languages.
+     \item \href{https://github.com/breaking-news-org/back-end#readme}{breaking-news-org/back-end} - news site back-end (Haskell, Pulumi, Kubernetes, Nix, PostgreSQL)
+     \item \href{https://github.com/objectionary/try-phi#readme}{try-phi} - online interactive interpreter of EO and $\varphi$-calculus (Haskell, TypeScript, PureScript)
+     \item \href{https://github.com/deemp/servant-queryparam#readme}{servant-queryparam} - plugins for servant (a Haskell webservices API library)
+     \item \href{https://github.com/deemp/clerk#readme}{clerk} - declaratively generate spreadsheets (Haskell)
+     \item \href{https://github.com/deemp/arigame#readme}{arigame} - an arithmetics game (PureScript)
+     \item \href{https://github.com/deemp/projects/tree/main/haskell/ts-serializable-test#readme}{ts-serializable-test} - code generator for testing ts-serializable (Haskell, TypeScript)
 \end{itemize}
-
-% \part{Patrick O'Hara}
-
-% \section{Work experience}
-
-% \begin{eventlist}
-
-% \item{June 2009 -- Present}
-%      {Tim Hortons}
-%      {Server}
-
-% Servicing Canada's largest fast service restaurant chain whose sales records in baked goods and coffee have had remarkable impact on the Canadian food service industry. Attention had been paid to the provision of quality and timely service of thousands of daily customers.  
-
-% \item{June 2013 -- December 2013}
-%      {Phoenix Firestopping}
-%      {Firestopper}
-
-% Restoring fire-resistance of walls and floors in new housing structures by impeding the spread of hazardous flames with flame resistant materials.
-
-% \item{May 2012 -- November 2012}
-%      {Cornerstone Contractors}
-%      {Landscaper}
-
-% Modification of the visible features of an area of land in many forms namely gardening and planting, construction of patios and decks, and installation of drainage systems.
-
-% \end{eventlist}
-
-% \section{Education}
-
-% \begin{yearlist}
-
-% \item[Bachelor of Science]{2011 -- 2015}
-%      {Biology}
-%      {Dalhousie University, Halifax NS}
-
-% \item{2010 -- 2011}
-%      {Secondary School Diploma}
-%      {White Oaks Secondary School, Oakville ON}
-
-% \item{2008 -- 2010}
-%      {Secondary School}
-%      {American School of Dubai, Dubai UAE}
-
-% \item{2007 -- 2008}
-%      {Secondary School}
-%      {American School of Paris, Saint-Cloud FR}
-
-% \end{yearlist}
-% \personal
-%     [https://www.facebook.com/patrick.
-%     ohara.718]
-%     {312 Poplar Drive, Oakville, ON}
-%     {(902) 441 5181}
-%     {ohara.ptf@gmail.com}
-
-% \section{Extra Curricular Activities}
-
-% \begin{yearlist}
-
-% \item{2015}
-%      {Journey Canadian Tour}
-%      {Shadow Security Services}
-
-% \item{2015}
-%      {Bonnie Raitt}
-%      {Shadow Security Services}
-
-% \item{2014}
-%      {Freak Show Haunted Wharf}
-%      {Murphy's The Cable Wharf}
-
-% \item{2010}
-%      {Big Brother Program}
-%      {American School of Dubai}
-
-% \item{2010}
-%      {Beach Blast for children with disability}
-%      {American School of Dubai}
-
-% \end{yearlist}
-
-% \section{Communication skills}
-
-% \begin{factlist}
-% \item{English}{Native speaker}
-% \item{French}{Oral: intermediate; written: poor}
-% \end{factlist}
-
-% \section{Achievements}
-
-% \begin{yearlist}
-
-% \item{2015}
-%      {Bachelors Degree}
-%      {}
-
-% \item{2011}
-%      {Honor Roll}
-%      {}
-
-% \item{2010}
-%      {Eastern Mediterranean Volleyball Champions}
-%      {}
-
-% \item{2010}
-%      {Honor Roll}
-%      {}
-
-% \item{2010}
-%      {District Coastal Conference Volleyball Champions}
-%      {}
-
-% \end{yearlist}
-
-% \vspace{-6pt} % Otherwise it just falls onto the next page.
-% \section{Computer skills}
-
-% \begin{factlist}
-
-% \item{Good level}
-%      {Microsoft Office, email, social networking}
-
-% \item{Basic level}
-%      {GitHub, HTML}
-
-% \end{factlist}
 
 \end{document}
